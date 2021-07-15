@@ -1,0 +1,16 @@
+import math
+import os
+import random
+import re
+import sys
+
+i = int(input('')) #Takes Test Number
+
+if i % 2 != 0: #If number is not divisible by 2 it is odd and thus weird
+    print('Weird')
+elif i % 2 == 0 and 2 <= i <= 5: #Divisible by 2 means even, an even number between 2 and 5 will be Not Weird
+    print('Not Weird')
+elif i % 2 == 0 and 6 <= i <= 20: #Divisible by 2 means even, an even number between 6 and 20 will be Weird
+    print('Weird')
+elif i % 2 == 0 and i > 20: #Divisible by 2 means even, an even number over 20 will be Not Weird
+    print('Not Weird')

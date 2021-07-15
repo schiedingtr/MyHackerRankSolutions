@@ -1,0 +1,6 @@
+a = int(input('')) #takes input a
+b = int(input('')) #takes input b
+
+print(a + b) #prints a + b
+print(a - b) #prints a - b
+print(a * b) #prints a * b

@@ -1,0 +1,12 @@
+def is_leap(year): #defines function
+    leap = False #assumes the year is not a leap year since most are not
+    if year % 400 == 0: #most specific case of a leap year first
+        return True
+    elif year % 100 == 0: #second most specific case where a leap year does not happen
+        return leap
+    elif year % 4 == 0: #most general case of a leap year, this format allows for no mistakes in leap year identification
+        return True
+    return leap #if none of these cases have occurred there is no leap year
+
+year = int(input()) #takes year number
+print(is_leap(year)) #prints result of called function

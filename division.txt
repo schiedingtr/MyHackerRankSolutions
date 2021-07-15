@@ -1,0 +1,5 @@
+a = int(input('')) #takes input a
+b = int(input('')) #takes input b
+
+print(a // b) #prints integer division result
+print(a / b) #prints float division reuslt
