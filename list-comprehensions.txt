@@ -1,0 +1,6 @@
+x = int(input()) #defines each variable necessary for the problem
+y = int(input())
+z = int(input())
+n = int(input())
+
+print([[i,j,k] for i in range(0,x+1) for j in range(0,y+1) for k in range(0,z+1) if ((i+j+k) != n)]) #prints a list [i,j,k] that represents the possible x,y,and z dimensions based on the original dimensions of the cuboid. These dimensions can also not add to n hence the if statement
