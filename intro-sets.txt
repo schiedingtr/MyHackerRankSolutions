@@ -1,0 +1,10 @@
+leng = int(input('Length of Array Here:')) #Takes the number of elements in the coming set
+arr = list(map(int, input('List of Spaced Numbers').split())) #takes the set in a sequence of spaced numbers
+
+
+
+def average(leng,arr):
+    aver = sum(set(arr))/leng #average is the sum of the elements in the set divided by number of elements there
+    print(aver) #prints the average
+
+average(leng,arr) #calls the function
