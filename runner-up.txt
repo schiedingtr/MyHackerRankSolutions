@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+    n = int(input())        #number of elements in the list
+    arr = map(int, input().split()) #elements presented separated by spaces
+  
+lst = list(arr)  #turns sequence of numbers into a list
+    
+def runner_up(n,arr):
+    grat = max(lst) #creates a variable for the greatest value in the list
+    while grat == max(lst):  #removes the greatest value and anything equal to it from the list
+        for i in lst:
+            if i == grat:
+                lst.remove(i)
+    print(max(lst)) #prints the new greatest value which is the original second greatest value
+    
+runner_up(n,arr)   #calls function

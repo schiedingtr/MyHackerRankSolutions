@@ -1,0 +1,8 @@
+first = input('Firstname') #Takes first name
+last = input('Lastname') #Takes last name
+
+
+def print_full_name(first, last):
+    print('Hello',first,last+'!','You just delved into python.') #function just creates a string using input and some string concatenation
+
+print_full_name(first,last) #calls function
